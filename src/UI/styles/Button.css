@@ -1,0 +1,37 @@
+.button-standard {
+    display: flex;
+    height: 38px;
+    font-size: 16px;
+    align-items: center;
+    border: inset 4px rgb(35, 161, 234);
+    border-radius: 5px;
+    background-color: rgb(76, 189, 255);
+}
+
+.button-standard:hover {
+    background-color: rgb(93, 196, 255);
+}
+
+.button-standard:active {
+    background-color: rgb(76, 189, 255);
+}
+
+.button-standard span {
+    position: relative;
+    bottom: 1px;
+}
+
+.button-standard img {
+    height: 80%;
+    margin-right: 5px;
+}
+
+.button-download:active img {
+    position: relative;
+    top: 5px;
+}
+
+.button-upload:active img {
+    position: relative;
+    bottom: 5px;
+}

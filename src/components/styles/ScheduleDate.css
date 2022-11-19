@@ -1,0 +1,23 @@
+.main-date {
+    width: 350px;
+    margin-bottom: 13px;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.main-date .date-picker {
+    font-size: 14px;
+    padding: 2px 2px 2px 4px;
+    position: absolute;
+    top: 29px;
+    left: 100%;
+}
+
+.main-date .week {
+    font-size: 15px;
+    padding: 0 1px 2px;
+    margin: 5px 3px 0;
+}

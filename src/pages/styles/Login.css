@@ -1,0 +1,28 @@
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 15%;
+}
+
+.login-form label {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.login-form label span {
+    position: absolute;
+    right: 100%;
+    top: 2px;
+    margin-right: 8px;
+}
+
+.login-form input {
+    font-size: 15px;
+    padding: 2px 5px 4px;
+}
+
+.login-form .button-standard {
+    margin: 5px 0 10px;
+}

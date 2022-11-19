@@ -1,0 +1,133 @@
+.main-table {
+    --delete-cell-width: 20px;
+
+    table-layout: fixed;
+    width: calc(100% + var(--delete-cell-width));
+    right: calc(var(--delete-cell-width) / 2);
+    position: relative;
+    border-collapse: collapse;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.main-table td, .main-table th {
+    border: 1px solid black;
+    word-wrap: break-word;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 2px;
+    background-color: white;
+}
+
+.main-table .delete-row {
+    position: relative;
+    width: var(--delete-cell-width);
+    border: none;
+    background-color: transparent;
+}
+
+.main-table tbody tr:hover .delete-row::before {
+    content: "X";
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(240, 0, 0);
+    border: 1px solid black;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    box-sizing: border-box;
+    position: absolute;
+    top: -0.5px;
+    left: 0px;
+    width: calc(100% + 1px);
+    height: calc(100% + 1px);
+}
+
+.main-table tbody tr:hover .delete-row:hover::before {
+    background-color: red;
+}
+
+.main-table tbody tr:hover .delete-row:active::before {
+    border: 2px solid rgb(176, 0 ,0);
+    background-color: rgb(240, 0, 0);
+}
+
+.main-table tfoot tr {
+    height: 25px;
+}
+
+.main-table .add-row {
+    position: relative;
+    border: none;
+}
+
+.main-table .add-row::before {
+    content: "+";
+    font-size: 1.7em;
+    padding-bottom: 7px;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(0, 192, 0);
+    border: 1px solid black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    box-sizing: border-box;
+    position: absolute;
+    top: -1px;
+    left: -0.5px;
+    width: calc(100% + 1px);
+    height: calc(100% + 1px);
+}
+
+.main-table .add-row:hover::before {
+    background-color: rgb(0, 208, 0);
+}
+
+.main-table .add-row:active::before {
+    border: 2px solid rgb(0, 128, 0);
+    background-color: rgb(0, 192, 0);
+}
+
+.main-table tbody td {
+    padding: 6px
+}
+
+.main-table .group {
+    width: 9%;
+}
+
+.main-table .lesson {
+    width: 4%;
+}
+
+.main-table .subjectOrig,
+.main-table .subjectNew {
+    width: 27%;
+}
+
+.main-table .teacherOrig,
+.main-table .teacherNew {
+    width: 14%;
+}
+
+.main-table .room {
+    width: 5%;
+}
+
+.main-table input {
+    display: block;
+    border: none;
+    box-sizing: border-box;
+    padding: 1px 4px 3px;
+    width: 100%;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}

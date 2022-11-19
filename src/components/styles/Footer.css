@@ -1,0 +1,15 @@
+.main-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.footer-section {
+    display: flex;
+    gap: 20px;
+}
